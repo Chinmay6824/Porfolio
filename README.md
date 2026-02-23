@@ -1,46 +1,47 @@
-# Arihant3704.github.io
+# Chinmay's Portfolio
 
-Welcome to my personal portfolio website! This site showcases my skills, projects, and background as a developer.
+Welcome to the source code for my personal portfolio website!
 
-## 🌟 About This Portfolio
+This repository contains the HTML, CSS, and JavaScript files that power my online portfolio, showcasing my projects, skills, and academic achievements.
 
-This repository contains the source code for my portfolio, built to represent my professional profile online. Here, you can learn more about me, explore my featured projects, and find ways to connect.
+## 🚀 Live Demo
 
-## 🚀 Features
+You can view the live portfolio here: **[https://chinmay6824.github.io/Porfolio/](https://chinmay6824.github.io/Porfolio/)** *(Note: check your GitHub Pages settings if this link is not active yet!)*
 
-- Personal introduction
-- Project highlights with descriptions and links
-- Overview of technical skills
-- Contact information for collaboration
+## 🛠️ Built With
 
-## 🛠️ Tech Stack
+- **HTML5** - Structure and content
+- **Tailwind CSS** - Styling and responsive design
+- **Vanilla JavaScript** - Interactive elements and dynamic behavior
+- **FontAwesome** - Icons
 
-- HTML5
+## 👨‍💻 About Me
 
-
-
-## 🌐 Live Demo
-
-Check out the live portfolio: [https://arihant3704.github.io/](https://arihant3704.github.io/)
-
-## 🖼️ Screenshots
-
-![image](https://github.com/user-attachments/assets/64443745-6a4c-4c20-830b-be4e658b17a5)
-
-## 🏁 Getting Started
+Hello! I am **Chinmay Hittalmakki**, a dedicated Electronics and Communication Engineering enthusiast from KLE Technological University, Hubli. I specialize in developing hardware-accelerated algorithms on FPGAs, deep learning pipelines on edge devices, and advancing generative AI and 5G V2X communication.
+ 
+## 💻 Local Development
 
 To run this project locally:
+
 1. Clone the repository:
+   ```bash
+   git clone https://github.com/Chinmay6824/Porfolio.git
    ```
-   git clone https://github.com/Arihant3704/Arihant3704.github.io.git
+2. Navigate to the project directory:
+   ```bash
+   cd Porfolio
    ```
-2. Open `index.html` in your browser.
+3. Open `index.html` in your web browser, or start a local server:
+   ```bash
+   python3 -m http.server 8000
+   ```
+4. Visit `http://localhost:8000` in your browser.
 
 ## 📫 Contact
 
-- **Email:** arihantappannavar@gmail.com
-- **Phone:** 7349750571
+- **Email:** hittalmakkichinmay@email.com
+- **LinkedIn:** [Chinmay Hittalmakki](https://www.linkedin.com/in/chinmay-hittalmakki/)
+- **GitHub:** [@Chinmay6824](https://github.com/Chinmay6824)
 
 ---
-
-Thank you for visiting my portfolio!
+*Powered by GitHub Pages*
