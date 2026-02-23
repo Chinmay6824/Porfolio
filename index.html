@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinmay's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @keyframes fade1 {
+
+            0%,
+            25% {
+                opacity: 1;
+            }
+
+            33%,
+            92% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade2 {
+
+            0%,
+            25% {
+                opacity: 0;
+            }
+
+            33%,
+            58% {
+                opacity: 1;
+            }
+
+            66%,
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fade3 {
+
+            0%,
+            58% {
+                opacity: 0;
+            }
+
+            66%,
+            92% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .animate-fade-1 {
+            animation: fade1 12s infinite;
+        }
+
+        .animate-fade-2 {
+            animation: fade2 12s infinite;
+        }
+
+        .animate-fade-3 {
+            animation: fade3 12s infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold gradient-text">Chinmay's Portfolio</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a>
+                                        <a href="#competitions" class="text-gray-700 hover:text-blue-600 transition">Competitions</a>
+                    <a href="#research-papers" class="text-gray-700 hover:text-blue-600 transition">Research Papers</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600 transition">Home</a>
+            <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600 transition">Projects</a>
+                        <a href="#competitions" class="block py-2 text-gray-700 hover:text-blue-600 transition">Competitions</a>
+            <a href="#research-papers" class="block py-2 text-gray-700 hover:text-blue-600 transition">Research
+                Papers</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600 transition">Contact</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 transition">About</a>
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                        Hi, I'm <span class="gradient-text">Chinmay</span>
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 mb-6">
+                        <span class="gradient-text">AI</span> & <span class="gradient-text">Electronics Engineer</span>
+                    </h2>
+                    <p class="text-gray-600 mb-8 text-lg">
+                        I specialize in developing generative AI systems, hardware acceleration on FPGAs,
+                        and intelligent communication pipelines like 5G V2X.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#projects"
+                            class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition font-medium">
+                            View Work
+                        </a>
+                        <a href="https://www.linkedin.com/in/chinmay-hittalmakki" target="_blank"
+                            class="px-6 py-3 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 transition font-medium flex items-center">
+                            <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/Chinmay6824" target="_blank"
+                            class="px-6 py-3 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100 transition font-medium flex items-center">
+                            <i class="fab fa-github mr-2"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 fade-in delay-1">
+                    <div class="relative w-full max-w-sm mx-auto">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-3xl transform rotate-3 scale-105 opacity-50 blur-lg">
+                        </div>
+                        <img src="images/chinmay_profile.jpg" alt="Portrait photo of Chinmay Hittalmakki" loading="lazy"
+                            class="relative w-full h-auto rounded-3xl shadow-2xl border-4 border-white object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">My <span class="gradient-text">Projects</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Here are some of my featured projects. Each one was built
+                    with passion and attention to detail.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden card-hover transition duration-300 fade-in delay-1 border border-gray-100 flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">AutoMedVis Text-to-Video Ad Generation</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Developed a Generative AI system to convert product descriptions into professional video advertisements, implementing text-visual mapping and audio-visual synchronization.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-semibold">Generative AI</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-xs font-semibold">LLMs</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto border-t border-gray-100 flex space-x-3 bg-gray-50">
+                        <a href="https://github.com/Chinmay6824/AutoMedVis-Text-to-Video-Ad-Generation.git" target="_blank" class="text-blue-600 hover:text-blue-800 flex items-center font-semibold text-sm">
+                            <i class="fab fa-github mr-2"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden card-hover transition duration-300 fade-in delay-2 border border-gray-100 flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Real-Time Image Acquisition using FPGA</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Designed an image-processing pipeline on PYNQ-Z2 using Vitis HLS for hardware acceleration, achieving real-time image acquisition and processing.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-semibold">FPGA</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">Vitis HLS</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-semibold">PYNQ-Z2</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto border-t border-gray-100 flex space-x-3 bg-gray-50">
+                        <a href="https://github.com/Chinmay6824/Real-Time-Image-Acquisition-using-FPGA.git" target="_blank" class="text-blue-600 hover:text-blue-800 flex items-center font-semibold text-sm">
+                            <i class="fab fa-github mr-2"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden card-hover transition duration-300 fade-in delay-3 border border-gray-100 flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Image Denoising on Jetson Orin</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Implemented a parallelized image enhancement pipeline via OpenMP multithreading, reducing execution time by ~47% on Nvidia Jetson Orin.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">Jetson Orin</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-semibold">OpenMP</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-xs font-semibold">C++</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto border-t border-gray-100 flex space-x-3 bg-gray-50">
+                        <a href="https://github.com/Chinmay6824/Image-Denoising-on-Jetson-Orin-Using-OpenMP.git" target="_blank" class="text-blue-600 hover:text-blue-800 flex items-center font-semibold text-sm">
+                            <i class="fab fa-github mr-2"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden card-hover transition duration-300 fade-in delay-1 border border-gray-100 flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Chatbot for Machine Learning Course</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Designed an NLP-based educational chatbot using SBERT on a curated FAQ dataset, achieving 98.12% intent classification accuracy with real-time Flask deployment.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">Python</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-semibold">NLP</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-xs font-semibold">Flask</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto border-t border-gray-100 flex space-x-3 bg-gray-50">
+                        <a href="https://github.com/Chinmay6824/Chatbot-for-Machine-Learning-Course.git" target="_blank" class="text-blue-600 hover:text-blue-800 flex items-center font-semibold text-sm">
+                            <i class="fab fa-github mr-2"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden card-hover transition duration-300 fade-in delay-2 border border-gray-100 flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Enhanced AoA & AoD Estimation for 5G V2X</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Built MATLAB algorithms for vehicular positioning in 5G V2X scenarios, deployed and validated the signal-processing pipeline on PYNQ-Z2 FPGA.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-semibold">MATLAB</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">5G V2X</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-semibold">FPGA</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto border-t border-gray-100 flex space-x-3 bg-gray-50">
+                        <a href="https://github.com/Chinmay6824/CIM_5G_V2X_AOA_Positioning.git" target="_blank" class="text-blue-600 hover:text-blue-800 flex items-center font-semibold text-sm">
+                            <i class="fab fa-github mr-2"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden card-hover transition duration-300 fade-in delay-3 border border-gray-100 flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">IoT-based Online TDS Monitoring System</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Developed an ESP32-based IoT system to monitor TDS levels in RO water, uploading real-time data to ThingSpeak cloud for visualization and alerts.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-xs font-semibold">IoT</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-semibold">ESP32</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">ThingSpeak</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto border-t border-gray-100 flex space-x-3 bg-gray-50">
+                        <a href="https://github.com/Chinmay6824/Online-TDS-Measurement-of-RO-Plant.git" target="_blank" class="text-blue-600 hover:text-blue-800 flex items-center font-semibold text-sm">
+                            <i class="fab fa-github mr-2"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Project 7 -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden card-hover transition duration-300 fade-in delay-1 border border-gray-100 flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">DNN Analysis for Indian Road Conditions</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Comparative analysis of Deep Neural Network models (Faster R-CNN, YOLOv10, SSDLite320 MobileNetV3) for object detection, specifically evaluating their performance, response time, and robustness under varied and challenging Indian road conditions.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-semibold">Deep Learning</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">Computer Vision</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">YOLOv10</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto border-t border-gray-100 flex space-x-3 bg-gray-50">
+                        <span class="text-blue-600 flex items-center font-semibold text-sm">
+                            <i class="fas fa-microchip mr-2"></i> Academic Mini-Project
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">My <span class="gradient-text">Skills</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A collection of technologies and platforms I'm proficient with.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-1">
+                    <i class="fab fa-cuttlefish text-4xl text-blue-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">C / C++</h3>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-2">
+                    <i class="fab fa-python text-4xl text-yellow-500 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">Python</h3>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-3">
+                    <i class="fas fa-microchip text-4xl text-red-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">FPGA Design</h3>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-4">
+                    <i class="fas fa-robot text-4xl text-orange-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">MATLAB</h3>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-1">
+                    <i class="fas fa-layer-group text-4xl text-blue-500 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">Vivado & Vitis HLS</h3>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-2">
+                    <i class="fas fa-signal text-4xl text-green-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">Signal Processing</h3>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-3">
+                    <i class="fas fa-network-wired text-4xl text-purple-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">5G V2X</h3>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-4">
+                    <i class="fas fa-brain text-4xl text-indigo-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">Generative AI & ML</h3>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-1">
+                    <i class="fas fa-image text-4xl text-teal-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">Image Processing</h3>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-2">
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">HTML & Web Dev</h3>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-3">
+                    <i class="fas fa-database text-4xl text-gray-700 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">DBMS</h3>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-4">
+                    <i class="fas fa-server text-4xl text-blue-800 mb-3"></i>
+                    <h3 class="font-bold text-gray-800">Embedded Systems</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Competitions Section -->
+    <section id="competitions" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">My <span class="gradient-text">Competitions & Achievements</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Events and hackathons where I've demonstrated my technical capabilities.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- HackRx 6.0 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300 fade-in delay-1 border-t-4 border-blue-600">
+                    <div class="p-8 pb-10">
+                        <i class="fas fa-trophy text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">HackRx 6.0</h3>
+                        <p class="text-gray-600 mb-4 font-medium">Selected for Generative AI Solution</p>
+                        <p class="text-sm text-gray-500">Participated in this highly competitive hackathon and was recognized for our innovative Generative AI approach addressing modern challenges.</p>
+                    </div>
+                </div>
+
+                <!-- GENIFY -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300 fade-in delay-2 border-t-4 border-purple-600">
+                    <div class="p-8 pb-10">
+                        <i class="fas fa-medal text-purple-600 text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">GENIFY Exhibition</h3>
+                        <p class="text-gray-600 mb-4 font-medium">Exhibited AutoMedVis Project</p>
+                        <p class="text-sm text-gray-500">Showcased our Generative AI multimodal framework for text-to-video ad generation to industry experts, demonstrating robust concept-to-prototype execution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Papers Section -->
+    <section id="research-papers" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">My <span class="gradient-text">Research Publications</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">My academic contributions in AI and signal processing.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Paper 1 -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden card-hover transition duration-300 fade-in delay-1 border border-gray-100">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-file-alt text-blue-600 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Image Denoising on Jetson Orin</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4 font-medium text-blue-800 bg-blue-100 px-3 py-1 rounded inline-block">Accepted at IEEE ICEI 2025</p>
+                        <p class="text-gray-600 text-sm mb-4">Authored a paper detailing the implementation of a parallelized image enhancement pipeline optimized via OpenMP multithreading on Nvidia Jetson Orin. Presented at IIT Dharwad.</p>
+                    </div>
+                </div>
+
+                <!-- Paper 2 -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden card-hover transition duration-300 fade-in delay-2 border border-gray-100">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-file-alt text-purple-600 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-800">AutoMedVis Multimodal Framework</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4 font-medium text-purple-800 bg-purple-100 px-3 py-1 rounded inline-block">Accepted at ICWCIE 2025</p>
+                        <p class="text-gray-600 text-sm mb-4">Researched and built a multimodal Generative AI framework mapping textual product descriptions to visual concepts. Expected presentation at NTU Singapore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3 fade-in">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="images/chinmay_profile.jpg" alt="Portrait photo of Chinmay Hittalmakki smiling" loading="lazy"
+                            class="w-full h-auto object-cover">
+                    </div>
+                </div>
+                <div class="md:w-2/3 fade-in delay-1">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About <span class="gradient-text">Me</span></h2>
+                    <p class="text-gray-600 mb-4 text-lg leading-relaxed">
+                        Hello! I am Chinmay Hittalmakki, a dedicated Electronics and Communication Engineering enthusiast with a profound interest in exploring advanced technical concepts and applying them innovatively. My academic and professional pursuits are driven by a deep curiosity about the intricacies of electronics and communication systems, coupled with a commitment to transforming theoretical knowledge into practical, real-world solutions.
+                    </p>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        Passionate about bridging the gap between theory and implementation, I continuously seek opportunities to engage in innovative projects that challenge conventional boundaries. My work emphasizes the integration of cutting-edge technologies to solve complex problems, showcasing my ability to navigate both conceptual frameworks and hands-on development. By aligning my technical skills with my passion for discovery, I aim to contribute meaningfully to advancements in the field of Electronics and Communication, inspiring impactful change and fostering innovation.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-600 mr-3 text-xl"></i>
+                            <span class="text-gray-700">Hubballi, India</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-graduation-cap text-blue-600 mr-3 text-xl"></i>
+                            <span class="text-gray-700">KLE Technological University</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">I'm always open to new opportunities and
+                    collaborations. Feel free to reach out via email, phone, or LinkedIn!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-1">
+                    <i class="fas fa-envelope text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Email Me</h3>
+                    <p class="text-gray-600 mb-4">hittalmakkichinmay@email.com</p>
+                    <a href="mailto:hittalmakkichinmay@email.com" class="text-blue-600 hover:text-blue-800">Send
+                        Email</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-2">
+                    <i class="fas fa-phone-alt text-green-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Call Me</h3>
+                    <p class="text-gray-600 mb-4">+91 9353983707</p>
+                    <a href="tel:+917349750571" class="text-blue-600 hover:text-blue-800">Call Now</a>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-xl text-center card-hover transition duration-300 fade-in delay-3">
+                    <i class="fab fa-linkedin text-blue-700 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Let's Connect</h3>
+                    <p class="text-gray-600 mb-4">Chinmay Hittalmakki</p>
+                    <a href="https://www.linkedin.com/in/chinmay-hittalmakki" target="_blank"
+                        class="text-blue-700 hover:text-blue-900 font-semibold">Visit Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Chinmay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center transition opacity-0 invisible hover:bg-blue-700">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
